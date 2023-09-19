@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <!-- Edit text to enter name -->
+   <EditText
+       android:id="@+id/enterDiary"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Enter Diary"
+       android:textSize="22sp"
+       android:layout_margin="20sp"
+       app:layout_constraintTop_toTopOf="parent"/>
+   <Button
+       android:id="@+id/btnEterDiary"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Enter Diary"
+       app:layout_constraintTop_toBottomOf="@+id/enterDiary"
+       android:layout_margin="10dp"/>
+   <Button
+       android:id="@+id/btnShowDiary"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Show Diary"
+       app:layout_constraintTop_toBottomOf="@+id/btnEterDiary"
+       android:layout_margin="10dp"/>
+
+   <TextView
+       android:id="@+id/txtShowDiary"
+       android:layout_width="match_parent"
+       android:layout_height="250dp"
+       android:textSize="30dp"
+       app:layout_constraintTop_toBottomOf="@id/btnShowDiary"
+       android:layout_margin="10dp"
+       android:background="#D3D3D3"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
